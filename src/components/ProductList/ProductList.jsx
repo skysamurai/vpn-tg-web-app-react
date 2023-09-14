@@ -22,7 +22,7 @@ const ProductList = () => {
     const onSendData = useCallback(() =>{
         const data = {
             products: addedItems,
-            totalPrice: getTotalPrice(addedItems)
+            totalPrice: getTotalPrice(addedItems),
             queryId,
         }
         fetch('http://185.140.209.72:8000/web-data', {
